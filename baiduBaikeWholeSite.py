@@ -25,7 +25,7 @@ def getLinks(pageUrl):
     for link in bsObj.findAll("a", href=re.compile("^(/item/)")):
         if 'href' in link.attrs:
             if link.attrs['href'] not in pages:
-            # 我们遇到了新页面
+                # 我们遇到了新页面
                 newPage = link.attrs['href']
                 print(newPage)
                 pages.add(newPage)
