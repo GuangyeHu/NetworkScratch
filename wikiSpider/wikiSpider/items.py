@@ -4,9 +4,9 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy import Item, Field
 
-
-class WikispiderItem(scrapy.Item):
+class Article(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    title = Field()
